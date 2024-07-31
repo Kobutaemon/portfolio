@@ -6,34 +6,37 @@
     margin: 0;
 }
 
-html, body {
+body {
     height: 100vh;
     background: #F3F3F3;
 }
 
 header {
-    height: 10vh;
+    height: 10%;
     display: flex;
-    color: black;
-    font-size: 20px;
-    margin: 0 30px;
     justify-content: space-between;
     align-items: center;
+    margin: 0 30px;
 }
 
-header h1 {
-    cursor: pointer;
-}
-
-.header-end {
+header ul {
+    list-style: none;
     display: flex;
-    width: 20%;
-    justify-content: space-between;
 }
 
-.header-end p {
+header ul li {
+    margin: 0 20px;
+    font-size: 20px;
     cursor: pointer;
+    transition: all 0.2s ease;
 }
+
+header ul li:hover {
+    opacity: 0.4;
+}
+
+/* ここまでheader */
+/* ここからmain */
 
 main {
     height: 70vh;
@@ -53,6 +56,9 @@ main {
 .intro-sen {
     margin-left: 50px;
 }
+
+/* ここまでmain */
+/* ここからfooter */
 
 footer {
     height: 20vh;
